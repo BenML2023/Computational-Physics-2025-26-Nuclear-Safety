@@ -8,7 +8,7 @@ Built in Python using ENDF/B-VIII.0 cross sections via OpenMC's HDF5 data format
 
 ## What This Does
 
-Given a fissile fuel composition (e.g. 93 wt% enriched uranium) and a geometry (sphere, cube, or cylinder), the code finds the **critical dimension** -- the size at which the neutron chain reaction is exactly self-sustaining (k_eff = 1.0) -- and computes a complete **uncertainty budget** broken down into statistical and systematic components.
+Given a fissile fuel composition (e.g. 93 wt% enriched uranium) and a geometry (sphere, cube), the code finds the **critical dimension** -- the size at which the neutron chain reaction is exactly self-sustaining (k_eff = 1.0) -- and computes a complete **uncertainty budget** broken down into statistical and systematic components.
 
 The pipeline answers three questions:
 
