@@ -101,7 +101,7 @@ Supported isotopes: U-234, U-235, U-236, U-238, Pu-239, Pu-240.
 Core classes:
 
 - **`FastReactorFuel`** -- holds isotope composition, atom densities, and nuclear data reference. Computes macroscopic cross sections, samples isotopes and reactions, handles scattering kinematics with proper CM-to-lab frame transformation.
-- **`Geometry`** subclasses (`Sphere`, `Cube`, `Cylinder`) -- uniform source sampling, distance-to-boundary calculation, volume computation.
+- **`Geometry`** subclasses (`Sphere`, `Cube`) -- uniform source sampling, distance-to-boundary calculation, volume computation.
 - **`run_fast_reactor_keff()`** -- the full power-iteration transport loop (reference implementation; the accelerated version in `fast_reactor_accel.py` is used in practice).
 
 Fuel definitions:
@@ -146,7 +146,7 @@ All simulation parameters are set as module-level constants at the top of `uncer
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `GEOMETRY_TYPE` | `"sphere"` | `"sphere"`, `"cube"`, or `"cylinder"` |
+| `GEOMETRY_TYPE` | `"sphere"` | `"sphere"`, `"cube"` |
 | `N_NEUTRONS` | 200 | Neutrons per cycle |
 | `N_INACTIVE` | 25 | Inactive (burn-in) cycles |
 | `N_ACTIVE` | 150 | Active (scoring) cycles |
