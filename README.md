@@ -168,7 +168,7 @@ For production runs, increase `N_NEUTRONS` to 1000+ and `N_ACTIVE` to 500+ for t
 - Python 3.8+
 - NumPy, SciPy, Matplotlib
 - OpenMC Python API (`openmc.data` for HDF5 nuclear data parsing)
-- ENDF/B-VIII.0 HDF5 data library -- download from [openmc.org](https://openmc.org/official-data-libraries/) and place the isotope `.h5` files (`U234.h5`, `U235.h5`, `U236.h5`, `U238.h5`, `Pu239.h5`, `Pu240.h5`) in the path configured in `cs_getter.py`
+- ENDF/B-VIII.0 HDF5 data library -- download from [openmc.org](https://openmc.org/official-data-libraries/) and place the isotope `.h5` files (`U234.h5`, `U235.h5`, `U236.h5`, `U238.h5`) in the path configured in `cs_getter.py`
 
 ## Usage
 
